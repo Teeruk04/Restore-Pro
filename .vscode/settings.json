@@ -1,0 +1,36 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Restore-PostgreSql",
+            "database": "store",
+            "username": "appuser",
+            "password": "secret"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Restore-Sqlite",
+            "database": "${workspaceFolder:Restore-main}/API/store.db"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "10.103.0.30",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "10.103.0.30",
+            "database": "master",
+            "username": "student",
+            "password": "Com@2022"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

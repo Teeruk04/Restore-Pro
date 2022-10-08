@@ -1,0 +1,45 @@
+Bearer 
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtYWEzaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpMzNAZ21haWwuY29tIiwidGVzdCI6IjU1NTU1NTU1NTU1NTUiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNZW1iZXIiLCJleHAiOjE2NjUyMDM0Njd9.bEN2BfWWyAPbbaXcY0cdj5A7YZrqJD8n__RAY-pjx_d9Jn3RciUTSV-zIQogy9WQSzCpSinQJonG9qgCUJML8g
+
+/////////////////////////////////
+{
+  "saveAddress": true,
+  "shippingAddress": {
+    "fullName": "mai",
+    "address1": "mai1",
+    "address2": "mai2",
+    "city": "สุ1000",
+    "state": "test string",
+    "zip": "test string",
+    "country": "teststring"
+  }
+}
+
+//////////////////////////
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Data source=store.db"
+  },
+  "JWTSettings": {
+    "TokenKey": "this is secret key and atleast 12 characters"
+  },
+  "StripeSettings": {
+    "PublishableKey": "pk_test_51Lq9tqEpzZ6PYoxXclG2JKSKO7yYZqAajCnw4MQcEB6NOWS2rMQlgwZkYIUeNnniiFPd0qhVEhy0kmO9c7HG9fwd00LiAcQu46",
+    "SecretKey": "sk_test_51Lq9tqEpzZ6PYoxXj8S1cjY7WIO0Kw2kz7bvmhDaQPi8bXJjoXddWKzHDg9PDkYuInSK2EFRwOLKdm548P2GCj1T00R1SRVv5Z",
+    "WhSecret": "whsec_32e34118df842a90f42f3a31e2e1552bbb00aec86f9a335f1a86f09bee811f1a"
+  }
+}
+
+///////////////////////////////////
+dotnet user-secrets set "StripeSettings:PublishableKey" "pk_test_51Lq9tqEpzZ6PYoxXclG2JKSKO7yYZqAajCnw4MQcEB6NOWS2rMQlgwZkYIUeNnniiFPd0qhVEhy0kmO9c7HG9fwd00LiAcQu46"
+
+dotnet user-secrets set "StripeSettings:SecretKey" "sk_test_51Lq9tqEpzZ6PYoxXj8S1cjY7WIO0Kw2kz7bvmhDaQPi8bXJjoXddWKzHDg9PDkYuInSK2EFRwOLKdm548P2GCj1T00R1SRVv5Z"
+
+dotnet user-secrets set "StripeSettings:WhSecret" "whsec_32e34118df842a90f42f3a31e2e1552bbb00aec86f9a335f1a86f09bee811f1a"
+
